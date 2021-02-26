@@ -1,2 +1,2 @@
-# spring-boot-monitoring
-Spring boot example using Prometheus and Grafana
+# spring-boot-example
+A simple example to use spring boot

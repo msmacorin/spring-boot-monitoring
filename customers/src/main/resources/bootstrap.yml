@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: customers-service
+  cloud:
+    consul:
+      config:
+        format: YAML
+      discovery:
+        instance-id: ${spring.application.name}:${random.value}
+        health-check-path: ${server.servlet.context-path}/actuator/health
+      host: ${CONSUL_HOST:localhost}
+      port: ${CONSUL_PORT:8500}
